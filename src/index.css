@@ -1,0 +1,179 @@
+/* Reset and basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Centering wrapper (login page only) */
+.login-container {
+  max-width: 420px;
+  margin: 4rem auto;
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Full page wrapper (fees creation page) */
+.fees-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem 4rem;
+  background: #ffffff;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Titles */
+h1, h2, h3, h4 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Form fields */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9fafb;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+input:focus, select:focus {
+  border-color: #4a90e2;
+  outline: none;
+  background: #fff;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #357bd8;
+}
+
+/* InputField, Dropdown label */
+.input-field label,
+.dropdown-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Fee Cards (Colleges) */
+.college-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.fee-card {
+  flex: 1 1 120px;
+  padding: 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+.fee-card:hover {
+  transform: translateY(-3px);
+}
+.fee-card.active {
+  border-color: #4a90e2;
+  background: #eaf4ff;
+}
+.fee-card .status {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Tabs */
+.tab-navigation {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.tab-navigation button {
+  padding: 0.6rem 1.2rem;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.tab-navigation button.active {
+  background: #4a90e2;
+  color: white;
+}
+
+/* Fee Rows */
+.fee-template {
+  margin-top: 1.5rem;
+}
+.fee-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.fee-row input {
+  flex: 1;
+}
+
+/* Total amount */
+.total-amount {
+  margin-top: auto;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4a90e2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fees-container {
+    padding: 1.5rem;
+  }
+  .college-cards {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .fees-container {
+    padding: 1rem;
+  }
+  .fee-row {
+    flex-direction: column;
+  }
+}
