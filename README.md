@@ -1,41 +1,34 @@
 Fees Creation App
 A simple and responsive web application for managing fee structures across different colleges.
 
+**************************************
 Features
-Login Authentication
+1. Login Authentication
+2. Create and manage multiple fee templates
+3. Select college and add custom fees
+4. Fully responsive across all devices
 
-Create and manage multiple fee templates
-
-Select college and add custom fees
-
-Fully responsive across all devices
-
+*************************************
 Tech Stack
-React.js
+- React.js
+- Custom CSS (no frameworks)
 
-Custom CSS (no frameworks)
-
-Vite (for fast development)
-
-Getting Started
+***************************************
 
 Clone the repository:
-
-git clone https://github.com/singhalkhushboo30/fees-creation-app.git
-cd fees-creation-app
+1. git clone https://github.com/singhalkhushboo30/fees-creation-app.git
+2. cd fees-creation-app
 
 Install dependencies:
-
-npm install
+1. npm install
 
 Start the app:
-npm run dev
+1. npm run dev
 
 Open in browser:
 http://localhost:5173
 
-
+*************************
 Login Credentials
 Username: admin
-
 Password: admin123
